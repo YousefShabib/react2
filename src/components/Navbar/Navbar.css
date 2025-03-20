@@ -1,0 +1,103 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Vertically center items */
+    padding: 1rem 2rem; /* Add padding */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; /* Fix the Navbar to the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo styling */
+.navbar-logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation links container */
+.navbar-links {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    gap: 20px; /* Add spacing between links */
+    position: fixed;
+    left: 72%;
+}
+
+
+/* Individual link styling */
+.navbar-links li {
+    margin-left: 1.5rem; /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark gray color */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    color: #0398f6; /* Tomato color for hover */
+}
+
+/* Hamburger menu (hidden by default) */
+.navbar-hamburger {
+    display: none; /* Hide on desktop */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hide the regular links on mobile */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; /* Adjust based on Navbar height */
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .pics.my-pic {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Show the hamburger menu on mobile */
+    .navbar-hamburger {
+        display: flex;
+    }
+
+    /* Show the links when the menu is open */
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* Adjust link styling for mobile */
+    .navbar-links li {
+        margin: 1rem 0; /* Space between links */
+        text-align: center; /* Center-align links */
+    }
+}
