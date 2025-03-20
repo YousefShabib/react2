@@ -1,0 +1,55 @@
+.holiday-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.view-all-link {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.holiday-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.holiday-card:hover {
+    transform: translateY(-5px);
+}
+
+.holiday-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.holiday-info {
+    padding: 15px;
+}
+
+.holiday-info h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.holiday-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.holiday-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #007bff;
+}

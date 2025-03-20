@@ -1,0 +1,87 @@
+.popular-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+.view-all-link {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.stay-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 15px;
+}
+
+.stay-card:hover {
+    transform: translateY(-5px);
+}
+
+.stay-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.stay-info {
+    padding: 15px;
+}
+
+.stay-type {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.stay-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stay-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stay-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.star {
+    font-size: 1rem;
+    color: #ffa500;
+    margin-right: 5px;
+}
+
+.rating-value {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.reviews {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.reviews:hover {
+    text-decoration: underline;
+}

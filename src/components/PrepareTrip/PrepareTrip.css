@@ -1,37 +1,61 @@
 .prepare-trip {
-    margin-top: 30px;
+    //margin-top: 10px;
+    margin-left: 60px;
+    text-align: center;
 }
 
 .title {
     font-size: 18px;
-    font-weight: bold;
     color: #b0b0b0;
+    margin-left: -1320px;
     text-transform: uppercase;
     margin-bottom: 32px;
 }
 
 .trip-options {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
 }
 
 .trip-option {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
     border-radius: 12px;
     cursor: pointer;
-    background: #007bff;
+    transition: transform 0.2s ease-in-out;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
+
+.trip-option.bg-pink-500 { background-color: #ff6384; }  /* Hotel */
+.trip-option.bg-orange-500 { background-color: #ff9f40; } /* Attractions */
+.trip-option.bg-green-500 { background-color: #4bc0c0; } /* Eats */
+.trip-option.bg-yellow-500 { background-color: #ffcd56; } /* Commute */
+.trip-option.bg-blue-500 { background-color: #36a2eb; }  /* Taxi */
+.trip-option.bg-green-600 { background-color: #4caf50; } /* Movies */
 
 .trip-option:hover {
     opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.trip-option:active {
+    transform: scale(0.95);
 }
 
 .icon {
     font-size: 22px;
+    color: white;
+}
+
+.trip-option span {
+    margin-top: 8px;
+    font-size: 14px;
     color: white;
 }

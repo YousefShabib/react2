@@ -80,9 +80,9 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .pics.my-pic {
-        border-radius: 50%;
-        object-fit: cover;
+    .my-pic {
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
     }
 
     /* Show the hamburger menu on mobile */

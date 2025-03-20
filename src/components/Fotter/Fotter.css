@@ -1,81 +1,89 @@
 .footer {
-    background: linear-gradient(90deg, #0077cc, #00aaff);
+    background: linear-gradient(to right, #005ba7, #229fec);
     color: white;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-
-
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    width: 115%;
 }
 
-.footer-content {
+
+.footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    width: 100%; /* Full width */
-
-
+    max-width: 1100px;
+    margin: auto;
 }
 
-.footer-logo {
-    width: 100%; /* Full width */
-
+.footer-brand {
+    max-width: 350px;
 }
 
-.footer-logo h1 {
+.footer-brand h2 {
     font-size: 24px;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
-.footer-logo p {
-    margin: 10px 0 20px;
+.footer-brand p {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 450px;
 }
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s;
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.social-icons a:hover {
-    color: #ffcc00;
+.facebook {
+    background-image: url("https://img.icons8.com/?size=100&id=118500&format=png&color=000000"); /* Replace with actual URL */
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url("https://img.icons8.com/?size=100&id=85154&format=png&color=000000"); /* Replace with actual URL */
+    background-size: cover;
+}
+
+.twitter {
+    background-image: url("https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000"); /* Replace with actual URL */
+    background-size: cover;
 }
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
-    flex: 1;
+    gap: 40px;
 }
 
-.footer-links div {
-    margin-right: 30px;
-}
-
-.footer-links h4 {
+.footer-section h4 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.footer-links ul {
+.footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-links li {
-    margin: 5px 0;
+.footer-section ul li {
+    margin-bottom: 8px;
 }
 
-.footer-links a {
+.footer-section ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 14px;
 }
 
-.footer-links a:hover {
-    color: #ffcc00;
+.footer-section ul li a:hover {
+    text-decoration: underline;
 }

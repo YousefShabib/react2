@@ -1,6 +1,6 @@
 .destinations-container {
     width: 100%;
-    position: fixed;
+    position: relative;
     max-width: 1500px;
     margin: 0 auto;
     text-align: left;

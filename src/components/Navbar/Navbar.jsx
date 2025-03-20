@@ -31,11 +31,11 @@ const Navbar = () => {
 
             <div className="pics">
                 <a href="default.asp">
-                    <img src="src/assets/notfication.svg" alt="1" width="40" height="40" />
+                    <img src="src/assets/notfication.svg" alt="1" width="30" height="30" />
                 </a>
 
                 <a>
-                    <img className="my-pic" src="src/assets/my_pic.jpeg" alt="1" width="50" height="50" />
+                    <img className="my-pic" src="src/assets/my_pic.jpeg" alt="1" width="45" height="45" />
                 </a>
             </div>
 
